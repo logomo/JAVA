@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Lojzo
+ *
+ */
+module HackerRankJavaTests {
+}
