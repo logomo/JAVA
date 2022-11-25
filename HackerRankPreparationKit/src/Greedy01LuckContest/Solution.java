@@ -30,20 +30,20 @@ class Result {
 		List<Integer> important = contests.stream().filter(lst -> lst.get(1) == 1).map(lst -> lst.get(0))
 				.collect(toList());
 		important.sort((a, b) -> a - b);
-		
-		//important.stream().forEach(i -> { System.out.print(i + " "); });
-		//System.out.println();
-		
+
+		// important.stream().forEach(i -> { System.out.print(i + " "); });
+		// System.out.println();
+
 		Integer sum = 0;
-		for (Integer i = 0; i < important.size() -k; i++) {
+		for (Integer i = 0; i < important.size() - k; i++) {
 			sum += important.get(i);
 		}
 		Integer maxPoints = 0;
 		for (List<Integer> record : contests) {
 			maxPoints += record.get(0);
 		}
-		//System.out.println(maxPoints - 2*sum);
-		return maxPoints - 2*sum;
+		// System.out.println(maxPoints - 2*sum);
+		return maxPoints - 2 * sum;
 		// Write your code here
 
 	}
